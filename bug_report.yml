@@ -1,0 +1,125 @@
+name: Отчёт о дефекте
+description: Шаблон для оформления отчёта о дефекте в тестовом приложении
+title: "[Ошибка]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Спасибо, что сообщили о дефекте!
+        Пожалуйста, заполните все обязательные поля максимально подробно.
+
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Проверка существующих отчётов
+      description: Подтвердите, что вы ознакомились с уже существующими отчётами о дефектах.
+      options:
+        - label: Я ознакомился(-лась) с существующими отчётами о дефектах, такого дефекта среди них нет
+          required: true
+
+  - type: input
+    id: summary
+    attributes:
+      label: Заголовок
+      description: Краткое название дефекта (одно предложение).
+      placeholder: Например, «Кнопка "Сохранить" не реагирует на нажатие»
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Что именно не так работает в приложении?
+      placeholder: Опишите дефект своими словами
+    validations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Предусловия
+      description: Состояние системы и данные, необходимые до начала воспроизведения.
+      placeholder: |
+        - Приложение запущено
+        - Пользователь авторизован
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Пронумерованная последовательность действий, приводящая к дефекту.
+      placeholder: |
+        1. Открыть ...
+        2. Ввести ...
+        3. Нажать ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      description: Как приложение должно себя вести.
+      placeholder: Что должно произойти
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+      description: Как приложение ведёт себя на самом деле.
+      placeholder: Что произошло на самом деле
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Скриншоты / Доп. материалы
+      description: Перетащите в это поле скриншоты, видео или логи.
+      placeholder: Вставьте изображения или ссылки
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоритет
+      description: Как срочно нужно исправить дефект?
+      options:
+        - Высокий
+        - Средний
+        - Низкий
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Серьёзность
+      description: Насколько сильно дефект влияет на работу приложения?
+      options:
+        - Блокирующая (Blocker)
+        - Критическая (Critical)
+        - Значительная (Major)
+        - Незначительная (Minor)
+        - Косметическая (Trivial)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Подтверждение
+      description: Подтвердите корректность данных.
+      options:
+        - label: Дефект воспроизводится стабильно
+          required: false
+        - label: Информация в отчёте достоверна
+          required: true
