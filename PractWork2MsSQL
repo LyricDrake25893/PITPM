@@ -1,0 +1,93 @@
+GO
+CREATE FUNCTION GetPoints (@VisitorId int)
+RETURNS int
+AS
+BEGIN
+    DECLARE @res int;
+    SELECT @res = SUM(f.Time)
+    FROM Ticket t
+    JOIN Session s ON s.Id = t.SessionId
+    JOIN Film f ON f.Id = s.FilmId
+    WHERE t.VisitorId = @VisitorId;
+    RETURN ISNULL(@res, 0);
+END
+GO
+
+CREATE FUNCTION FilmsByGenre (@GenreName nvarchar(50))
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT f.Id, f.Name, STRING_AGG(g.Name, ', ') AS Genres
+    FROM Film f
+    JOIN FilmGenre fg ON fg.FilmId = f.Id
+    JOIN Genre g ON g.Id = fg.GenreId
+    WHERE f.Id IN (
+        SELECT fg2.FilmId
+        FROM FilmGenre fg2
+        JOIN Genre g2 ON g2.Id = fg2.GenreId
+        WHERE g2.Name = @GenreName)
+    GROUP BY f.Id, f.Name
+)
+GO
+
+CREATE PROCEDURE AddTicket
+    @Phone char(10),
+    @SessionId int,
+    @Row tinyint,
+    @Seat tinyint,
+    @TicketId int OUTPUT
+AS
+BEGIN
+    DECLARE @VisitorId int;
+    SELECT @VisitorId = Id FROM Visitor WHERE PhoneNumber = @Phone;
+
+    IF @VisitorId IS NULL
+    BEGIN
+        INSERT INTO Visitor (PhoneNumber) VALUES (@Phone);
+        SET @VisitorId = SCOPE_IDENTITY();
+    END
+
+    INSERT INTO Ticket (VisitorId, SessionId, Row, Seat)
+    VALUES (@VisitorId, @SessionId, @Row, @Seat);
+
+    SET @TicketId = SCOPE_IDENTITY();
+END
+GO
+
+CREATE PROCEDURE AddHall
+    @Cinema nvarchar(50) = N'Титан-Арена',
+    @HallNumber tinyint,
+    @RowsCount tinyint,
+    @SeatsPerRow tinyint
+AS
+BEGIN
+    IF EXISTS (SELECT 1 FROM Hall
+               WHERE Cinema = @Cinema AND HallNumber = @HallNumber)
+        UPDATE Hall
+        SET RowsCount = @RowsCount, SeatsPerRow = @SeatsPerRow
+        WHERE Cinema = @Cinema AND HallNumber = @HallNumber;
+    ELSE
+        INSERT INTO Hall (Cinema, HallNumber, RowsCount, SeatsPerRow)
+        VALUES (@Cinema, @HallNumber, @RowsCount, @SeatsPerRow);
+END
+GO
+
+-- 5.1
+SELECT Id, Name, dbo.GetPoints(Id) AS Points
+FROM Visitor;
+
+-- 5.2 (жанр замени на свой из таблицы Genre)
+SELECT * FROM dbo.FilmsByGenre(N'Комедия');
+
+-- 5.3 (сеанс с Id = 1 должен существовать)
+DECLARE @id int;
+EXEC AddTicket '9001112233', 1, 5, 7, @id OUTPUT;
+SELECT @id AS TicketNumber;
+SELECT * FROM Ticket WHERE Id = @id;
+
+-- 5.4
+EXEC AddHall @HallNumber = 9, @RowsCount = 10, @SeatsPerRow = 12;
+EXEC AddHall @HallNumber = 9, @RowsCount = 15, @SeatsPerRow = 20;
+SELECT * FROM Hall;
+
