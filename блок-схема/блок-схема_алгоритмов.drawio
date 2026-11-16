@@ -1,0 +1,173 @@
+<mxfile host="Electron" pages="2">
+  <diagram id="p0" name="CalculateOrderTotal">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="19" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="794" pageHeight="1123" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XUK7-s_fpUfwxN3FbxcD-2" edge="1" parent="1" source="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c3">
+          <mxGeometry relative="1" x="0.0053" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=1;arcSize=50;" value="Начало" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="7.6" as="geometry" />
+        </mxCell>
+        <mxCell id="XUK7-s_fpUfwxN3FbxcD-3" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VwLYgZIZSZv84z4q6UQ-3" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;dashed=1;dashPattern=8 8;strokeWidth=1.3;" target="9VwLYgZIZSZv84z4q6UQ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=0;" value="Вычислить&lt;br&gt;сумму&lt;br&gt;заказа" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="121" as="geometry" />
+        </mxCell>
+        <mxCell id="XUK7-s_fpUfwxN3FbxcD-5" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VwLYgZIZSZv84z4q6UQ-5" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;dashed=1;dashPattern=8 8;strokeWidth=1.3;" target="9VwLYgZIZSZv84z4q6UQ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=process;size=0.125;" value="Расчёт&lt;br&gt;скидки" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="234.4" as="geometry" />
+        </mxCell>
+        <mxCell id="XUK7-s_fpUfwxN3FbxcD-6" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VwLYgZIZSZv84z4q6UQ-7" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;dashed=1;dashPattern=8 8;strokeWidth=1.3;" target="9VwLYgZIZSZv84z4q6UQ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=19;" value="Вернуть&lt;br&gt;итог" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="347.8" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=1;arcSize=50;" value="Конец" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="461.2" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="subtotal = order.Items.Sum(item =&gt;&lt;br&gt;item.Quantity * item.UnitPrice)" vertex="1">
+          <mxGeometry height="46.1" width="306.9" x="277.8" y="135.7" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="discount = CalculateDiscount(&lt;br&gt;order.Customer, subtotal)&lt;br&gt;(схема — на рисунке 3)" vertex="1">
+          <mxGeometry height="67.3" width="263.5" x="277.8" y="238.5" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="return subtotal - discount" vertex="1">
+          <mxGeometry height="24.9" width="237.4" x="277.8" y="373.1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VwLYgZIZSZv84z4q6UQ-1" parent="1" style="strokeWidth=1.3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=east;" value="" vertex="1">
+          <mxGeometry height="43" width="9" x="259.8" y="138.8" as="geometry" />
+        </mxCell>
+        <mxCell id="9VwLYgZIZSZv84z4q6UQ-4" parent="1" style="strokeWidth=1.3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=east;" value="" vertex="1">
+          <mxGeometry height="57" width="9" x="259.8" y="243.65" as="geometry" />
+        </mxCell>
+        <mxCell id="9VwLYgZIZSZv84z4q6UQ-6" parent="1" style="strokeWidth=1.3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=east;" value="" vertex="1">
+          <mxGeometry height="34" width="9" x="259.8" y="368.55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p1" name="CalculateDiscount">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="19" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="794" pageHeight="1123" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-3" edge="1" parent="1" source="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;strokeWidth=1.3;" target="c3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=1;arcSize=50;" value="Начало" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="264.6" y="7.6" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-4" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-5" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;dashPattern=8 8;endArrow=none;endFill=0;strokeWidth=1.3;" target="ZIYP0h3OLe3T8UVxZYqJ-6">
+          <mxGeometry relative="1" x="-0.0588" as="geometry">
+            <mxPoint x="209" y="158.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c3" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rhombus;" value="Премиум&lt;br&gt;и &gt; 1000?" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="264.6" y="121" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-9" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="ZIYP0h3OLe3T8UVxZYqJ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-10" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rhombus;" value="Есть&lt;br&gt;промокод?" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="264.6" y="234.4" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-11" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="646" y="158.8" />
+              <mxPoint x="646" y="437" />
+              <mxPoint x="321.3" y="437" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c5" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=0;" value="Скидка 10 %&lt;br&gt;от суммы" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="472.5" y="121" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-12" edge="1" parent="1" source="c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="646" y="272.2" />
+              <mxPoint x="646" y="437" />
+              <mxPoint x="321.3" y="437" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c6" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=process;size=0.125;" value="Применить&lt;br&gt;промокод" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="472.5" y="234.4" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-13" edge="1" parent="1" source="c7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=0;" value="Скидка = 0" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="264.6" y="347.8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-14" edge="1" parent="1" source="c8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=1.3;" target="c9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=19;" value="Вернуть&lt;br&gt;скидку" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="264.6" y="461.2" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=1;arcSize=50;" value="Конец" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="264.6" y="574.6" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" edge="1" parent="1" style="endArrow=open;endFill=0;startArrow=none;startFill=0;html=1;strokeWidth=1.3;strokeColor=#000000;rounded=0;endSize=8;startSize=8;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="321.3" y="196.6" as="sourcePoint" />
+            <mxPoint x="321.3" y="234.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" edge="1" parent="1" style="endArrow=open;endFill=0;startArrow=none;startFill=0;html=1;strokeWidth=1.3;strokeColor=#000000;rounded=0;endSize=8;startSize=8;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="321.3" y="310" as="sourcePoint" />
+            <mxPoint x="321.3" y="347.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="Нет" vertex="1">
+          <mxGeometry height="24.9" width="37.4" x="328.9" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="Да" vertex="1">
+          <mxGeometry height="24.9" width="28.7" x="385.6" y="131.2" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="Да" vertex="1">
+          <mxGeometry height="24.9" width="28.7" x="385.6" y="244.6" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="Нет" vertex="1">
+          <mxGeometry height="24.9" width="37.4" x="328.9" y="316.4" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="customer.IsPremium &amp;&amp;&lt;br&gt;subtotal &gt; 1000" vertex="1">
+          <mxGeometry height="46.1" width="193.9" x="1.1500000000000004" y="135.25" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;strokeWidth=1.3;" value="!string.IsNullOrEmpty(&lt;br&gt;customer.PromoCode)" vertex="1">
+          <mxGeometry height="46.1" width="202.6" x="3.4" y="249.1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-6" parent="1" style="strokeWidth=1.3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=west;" value="" vertex="1">
+          <mxGeometry height="43" width="9" x="206" y="137.3" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIYP0h3OLe3T8UVxZYqJ-8" parent="1" style="strokeWidth=1.3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;direction=west;" value="" vertex="1">
+          <mxGeometry height="43" width="9" x="215" y="250.65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,66 @@
+<mxfile host="Electron">
+  <diagram id="p0" name="Набор символов">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="19" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="794" pageHeight="1123" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=0;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="75.6" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=process;size=0.125;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="396.9" y="75.6" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=19;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="234.4" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=document;boundedLbl=1;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="396.9" y="234.4" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rhombus;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="393.1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;shape=hexagon;perimeter=hexagonPerimeter2;fixedSize=1;size=19;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="396.9" y="393.1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;strokeWidth=1.3;fillColor=none;strokeColor=#000000;rounded=1;arcSize=50;" value="" vertex="1">
+          <mxGeometry height="75.6" width="113.4" x="113.4" y="551.9" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Процесс" vertex="1">
+          <mxGeometry height="24.9" width="72.2" x="134" y="161.4" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Предопределённый процесс" vertex="1">
+          <mxGeometry height="24.9" width="220" x="343.6" y="161.4" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Данные" vertex="1">
+          <mxGeometry height="24.9" width="63.5" x="138.3" y="320.2" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Документ" vertex="1">
+          <mxGeometry height="24.9" width="80.9" x="413.2" y="320.2" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Решение" vertex="1">
+          <mxGeometry height="24.9" width="72.2" x="134" y="478.9" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Подготовка" vertex="1">
+          <mxGeometry height="24.9" width="98.3" x="404.5" y="478.9" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Терминатор" vertex="1">
+          <mxGeometry height="24.9" width="98.3" x="121" y="637.7" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Комментарий" vertex="1">
+          <mxGeometry height="24.9" width="107" x="400.1" y="637.7" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;fontFamily=Times New Roman;fontSize=16;spacing=0;" value="Текст&lt;br&gt;комментария" vertex="1">
+          <mxGeometry height="46.1" width="107" x="455.5" y="566.6" as="geometry" />
+        </mxCell>
+        <mxCell id="BPIUzQTw_OG8uHk5JnHU-3" edge="1" parent="1" source="BPIUzQTw_OG8uHk5JnHU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;dashed=1;dashPattern=8 8;strokeWidth=1.3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="589.6500000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BPIUzQTw_OG8uHk5JnHU-2" parent="1" style="strokeWidth=1.3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="57" width="9" x="437" y="561.15" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
